@@ -1,0 +1,15 @@
+services:
+  mongodb:
+    image: mongo:8.0
+    container_name: materialdesk_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: materialdesk_admin
+      MONGO_INITDB_ROOT_PASSWORD: ChangeThisLocalPassword123
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

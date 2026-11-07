@@ -1,0 +1,16 @@
+{
+  "name": "materialdesk-2",
+  "version": "1.0.0",
+  "description": "Analyser l'activité d'un centre de prêt avec MongoDB",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "mongosh \"mongodb://127.0.0.1:27017/pl_aggregations\" seed.mongosh.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
