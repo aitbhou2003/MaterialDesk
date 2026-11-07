@@ -35,7 +35,7 @@ const pipeline = [
       _id: 0,
       category: "$_id",
       InterventionsTerminees: 1,
-      CoutMoyen: 1,
+      CoutMoyen: {$round : ["$CoutMoyen",2]},
       CoutTotal: 1,
     },
   },
