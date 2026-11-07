@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "seed": "mongosh \"mongodb://127.0.0.1:27017/pl_aggregations\" seed.mongosh.js"
+    "seed": "docker exec -i materialdesk_mongodb mongosh \"mongodb://127.0.0.1:27017/pl_aggregations\" --authenticationDatabase admin -u materialdesk_admin -p ChangeThisLocalPassword123 < seed.mongosh.js"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
