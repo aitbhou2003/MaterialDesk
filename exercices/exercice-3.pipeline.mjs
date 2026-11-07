@@ -49,7 +49,8 @@ const pipeline = [
 
   {
     $project: {
-      _id: 1,
+      _id: 0,
+      city : "$_id",
       PretsRendusAdmissibles: 1,
       Recettes: 1,
     },

@@ -38,8 +38,8 @@ const pipeline = [
 
   {
     $project:{
-        _id : 1,
-        category : "$equipments.category",
+        _id : 0,
+        category : "$_id",
         prets : 1,
         dureeMoyenne : 1,
         recettes : 1
